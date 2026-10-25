@@ -7,8 +7,16 @@ no logros nuevos). **No inventar nada fuera de este banco.**
 
 ---
 
+## Promart Homecenter — Desarrollador Full Stack .NET / Spring Boot / React con IA
+*Lima, Perú · Sep 2026 – Actualidad · Joyit (servicio tercerizado) · Retail · Sistemas internos y migración de legacy*
+
+- `[backend][frontend][liderazgo]` Desarrollo y migro los sistemas internos de Promart hacia una arquitectura mantenible, con .NET y Spring Boot en el backend y React en el frontend, adaptando aplicaciones heredadas sin interrumpir la operación.
+- `[backend][data]` Integro esos sistemas con los procesos de la operación e incorporo componentes de inteligencia artificial para automatizar tareas que hoy se resuelven de forma manual.
+- `[frontend]` Construyo las interfaces de los módulos migrados en React + TypeScript, con componentes reutilizables y paridad funcional respecto a los sistemas heredados. `[verificar]`
+- `[backend][bd]` Expongo y consumo API REST en .NET y Spring Boot para desacoplar los módulos migrados de las aplicaciones heredadas. `[verificar]`
+
 ## Caja Arequipa — Desarrollador Full Stack .NET / Angular
-*Lima, Perú · Nov 2025 – Jun 2026 · Sector financiero regulado · Plataforma Caja 360*
+*Lima, Perú · Nov 2025 – Ago 2026 · Englobe Company S.A.C. (servicio tercerizado) · Sector financiero regulado · Plataforma Caja 360*
 
 - `[liderazgo][backend][frontend]` Lideré el diseño y desarrollo de extremo a extremo del Sistema de Ingresos, Recursos Humanos y Selección de Personal sobre la plataforma corporativa Caja 360, definiendo la arquitectura (.NET en el backend y Angular en el frontend) y los estándares técnicos del equipo.
 - `[bd][backend]` Modelé y optimicé la capa de persistencia sobre SQL Server y Oracle, garantizando la integridad transaccional y el rendimiento de procesos críticos de RR. HH. y nómina.
@@ -17,7 +25,7 @@ no logros nuevos). **No inventar nada fuera de este banco.**
 - `[backend]` Implementé servicios y endpoints REST en .NET aplicando buenas prácticas de arquitectura y validación de datos. `[verificar]`
 
 ## Educa Perú — Desarrollador Full Stack
-*Huaraz, Perú · Abr 2024 – Nov 2025 · E-commerce educativo*
+*Huaraz, Perú · Abr 2024 – Nov 2024 · E-commerce educativo*
 
 - `[frontend][backend][liderazgo]` Lideré el desarrollo de una plataforma de e-commerce educativo con Laravel y React/TypeScript, integrando matrículas, pagos en línea y emisión automática de certificados en un único flujo de extremo a extremo.
 - `[backend][data]` Optimicé la gestión académica y la experiencia de usuario, incrementando los ingresos entre un 20% y 23% durante los primeros 3 meses.
@@ -49,3 +57,6 @@ no logros nuevos). **No inventar nada fuera de este banco.**
 - **DevOps / Cloud**: prioriza `[devops]`. Resalta la automatización de despliegue en Caja.
   Skills: Cloud & DevOps + CI/CD arriba.
 - **Full Stack**: mezcla equilibrada; deja el titular Full Stack por defecto.
+  Resalta Promart (migración de legacy con .NET/Spring Boot/React) y Caja Arequipa.
+- **IA / Automatización**: prioriza `[data]`. Resalta Promart (componentes de IA para
+  automatizar tareas manuales) y las certificaciones Anthropic de `DESARROLLO PROFESIONAL`.

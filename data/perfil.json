@@ -1,7 +1,7 @@
 {
   "_meta": {
     "version": "1.0",
-    "actualizado": "2026-08-13",
+    "actualizado": "2026-10-25",
     "titular": "Fuente única de verdad del CV de Luis Alberto Huaney Lino",
     "descripcion": "Este archivo consolida TODA la información del CV (experiencia, certificados, constancias, educación, habilidades) de forma ordenada, bilingüe (es/en) y legible por máquina. Reemplaza como fuente principal a los .md de esta carpeta. La IA lee de aquí para armar cada CV; el generador (generador/*.js) NO lee este archivo: la IA selecciona y copia lo relevante a contenido_es.js / contenido_en.js.",
     "comoLoUsaLaIA": [
@@ -25,35 +25,38 @@
     "marcadorVerificar": "verificar: true => Luis debe confirmarlo antes de usarlo en un CV. No es un logro nuevo, es un ángulo plausible del mismo trabajo.",
     "rutaEvidencias": "Las rutas de 'evidencia' son relativas a la carpeta /evidencias del proyecto.",
     "pendientesDeLuis": [
-      "Reemplazar imágenes de EJEMPLO en /evidencias por las reales.",
-      "Rellenar 'referencia' (nombre, cargo, teléfono) de cada experiencia, o dejar 'Referencias a solicitud'.",
       "Confirmar la grafía OGTISE vs OGITISE.",
       "Confirmar nivel real de inglés (A1 certificado vs intermedio real).",
-      "Agregar LinkedIn y GitHub en 'personal.contacto' si los tiene.",
-      "Subir imágenes de las constancias de Educa Perú, OGTISE y Eddecap (hoy solo hay la de Caja Arequipa)."
+      "Confirmar la grafía legal de 'Joyit' (la empresa que terceriza el servicio en Promart) y si en el CV debe ir el cargo con o sin ella.",
+      "Pedir la constancia de trabajo de Promart/Joyit cuando cierre el periodo (hoy es el empleo actual).",
+      "Revisar los bullets con 'verificar': true de Promart antes de usarlos en una postulación."
     ]
   },
-
   "personal": {
     "nombre": "Luis Alberto Huaney Lino",
-    "ubicacion": { "es": "Perú", "en": "Peru" },
+    "ubicacion": {
+      "es": "Perú",
+      "en": "Peru"
+    },
     "aniosExperiencia": 3,
     "contacto": {
       "telefono": "+51 946 587 273",
       "email": "martinlinohuaney@gmail.com",
       "portafolio": {
         "url": "https://www.luis-alberto-huaney-lino.online/",
-        "texto": { "es": "Portafolio online", "en": "Online Portfolio" }
+        "texto": {
+          "es": "Portafolio online",
+          "en": "Online Portfolio"
+        }
       },
-      "linkedin": "",
-      "github": ""
+      "linkedin": "https://www.linkedin.com/in/luis-alberto-huaney-lino",
+      "github": "https://github.com/luis-huaney-lino-devops/"
     }
   },
-
   "titulares": {
     "fullstack": {
-      "es": "Mid-Senior Full Stack | Java | .NET | React | Angular | DevOps | +3 años exp.",
-      "en": "Mid-Senior Full Stack | Java | .NET | React | Angular | DevOps | 3+ years exp."
+      "es": "Mid-Senior Full Stack Developer | .NET · Java (Spring Boot) · React · Angular | IA · DevOps | +3 años exp.",
+      "en": "Mid-Senior Full Stack Developer | .NET · Java (Spring Boot) · React · Angular | AI · DevOps | 3+ years exp."
     },
     "frontend": {
       "es": "Senior Frontend Developer | React | TypeScript | Angular | +3 años exp.",
@@ -76,95 +79,239 @@
       "en": "Full Stack Developer | Python | Data & AI | SQL | 3+ years exp."
     }
   },
-
   "perfil": {
     "default": {
-      "es": "Desarrollador Full Stack y DevOps con más de 3 años de experiencia, especializado en .NET y Angular. Lidero el diseño y desarrollo de extremo a extremo de sistemas para el sector financiero, abarcando arquitectura, modelado de datos en SQL Server y Oracle, y despliegue de la solución. Combino una sólida base full stack con prácticas DevOps (Docker, CI/CD) y metodologías ágiles para entregar soluciones escalables y de alto impacto.",
-      "en": "Full Stack and DevOps Developer with over 3 years of experience, specialized in .NET and Angular. I lead the end-to-end design and development of systems for the financial sector, covering solution architecture, data modeling on SQL Server and Oracle, and deployment. I combine a solid full stack foundation with DevOps practices (Docker, CI/CD) and agile methodologies to deliver scalable, high-impact solutions."
+      "es": "Desarrollador Full Stack y DevOps con más de 3 años de experiencia construyendo soluciones empresariales de extremo a extremo con .NET, Java (Spring Boot), React y Angular. Actualmente desarrollo y migro los sistemas internos de Promart Homecenter hacia una arquitectura mantenible, incorporando componentes de inteligencia artificial para automatizar tareas manuales. Antes lideré el diseño y desarrollo del Sistema de Ingresos, RR. HH. y Selección de Personal de Caja Arequipa sobre la plataforma Caja 360, modelando la persistencia en SQL Server y Oracle. Combino una sólida base full stack con prácticas DevOps (Docker, CI/CD) y metodologías ágiles.",
+      "en": "Full Stack and DevOps Developer with over 3 years of experience building end-to-end enterprise solutions with .NET, Java (Spring Boot), React, and Angular. I currently develop and migrate Promart Homecenter’s internal systems toward a maintainable architecture, incorporating artificial intelligence components to automate manual tasks. Previously I led the design and development of Caja Arequipa’s Income, HR, and Personnel Selection System on the Caja 360 platform, modeling persistence on SQL Server and Oracle. I combine a solid full stack foundation with DevOps practices (Docker, CI/CD) and agile methodologies."
     }
   },
-
   "experiencia": [
+    {
+      "id": "promart-joyit",
+      "empresa": "Promart Homecenter",
+      "ubicacion": {
+        "es": "Lima, Perú",
+        "en": "Lima, Peru"
+      },
+      "cargo": {
+        "es": "Desarrollador Full Stack .NET / Spring Boot / React con IA",
+        "en": "Full Stack Developer .NET / Spring Boot / React with AI"
+      },
+      "fechas": {
+        "es": "Septiembre 2026 – Actualidad",
+        "en": "September 2026 – Present"
+      },
+      "subtitulo": {
+        "es": "Joyit (servicio tercerizado)",
+        "en": "Joyit (outsourced service)"
+      },
+      "sector": {
+        "es": "Retail · Sistemas internos y migración de aplicaciones heredadas",
+        "en": "Retail · Internal systems and legacy application migration"
+      },
+      "stack": [
+        ".NET",
+        "C#",
+        "Java",
+        "Spring Boot",
+        "React",
+        "TypeScript",
+        "IA"
+      ],
+      "referencia": {
+        "nombre": "Miguel Rantes",
+        "cargo": "",
+        "telefono": "+51 910 748 185"
+      },
+      "constanciaEvidencia": "",
+      "bullets": [
+        {
+          "tags": [
+            "backend",
+            "frontend",
+            "liderazgo"
+          ],
+          "verificar": false,
+          "es": "Desarrollo y migro los sistemas internos de Promart hacia una arquitectura mantenible, con .NET y Spring Boot en el backend y React en el frontend, adaptando aplicaciones heredadas sin interrumpir la operación.",
+          "en": "Develop and migrate Promart's internal systems toward a maintainable architecture, with .NET and Spring Boot on the backend and React on the frontend, adapting legacy applications without disrupting operations."
+        },
+        {
+          "tags": [
+            "backend",
+            "data"
+          ],
+          "verificar": false,
+          "es": "Integro esos sistemas con los procesos de la operación e incorporo componentes de inteligencia artificial para automatizar tareas que hoy se resuelven de forma manual.",
+          "en": "Integrate those systems with the operation's business processes and incorporate artificial intelligence components to automate tasks currently handled manually."
+        },
+        {
+          "tags": [
+            "frontend"
+          ],
+          "verificar": true,
+          "es": "Construyo las interfaces de los módulos migrados en React + TypeScript, con componentes reutilizables y paridad funcional respecto a los sistemas heredados.",
+          "en": "Build the interfaces of the migrated modules in React + TypeScript, with reusable components and functional parity with the legacy systems."
+        },
+        {
+          "tags": [
+            "backend",
+            "bd"
+          ],
+          "verificar": true,
+          "es": "Expongo y consumo API REST en .NET y Spring Boot para desacoplar los módulos migrados de las aplicaciones heredadas.",
+          "en": "Expose and consume REST APIs in .NET and Spring Boot to decouple the migrated modules from the legacy applications."
+        }
+      ]
+    },
     {
       "id": "caja-arequipa",
       "empresa": "Caja Arequipa",
-      "ubicacion": { "es": "Lima, Perú", "en": "Lima, Peru" },
+      "ubicacion": {
+        "es": "Lima, Perú",
+        "en": "Lima, Peru"
+      },
       "cargo": {
         "es": "Desarrollador Full Stack .NET / Angular",
         "en": "Full Stack Developer .NET / Angular"
       },
-      "fechas": { "es": "Noviembre 2025 – Junio 2026", "en": "November 2025 – June 2026" },
+      "fechas": {
+        "es": "Noviembre 2025 – Agosto 2026",
+        "en": "November 2025 – August 2026"
+      },
       "sector": {
         "es": "Sector financiero regulado · Plataforma Caja 360",
         "en": "Regulated financial sector · Caja 360 platform"
       },
-      "stack": [".NET", "C#", "Angular", "SQL Server", "Oracle", "Docker", "CI/CD"],
-      "referencia": { "nombre": "Alex Sifuentes", "cargo": "Ing.", "telefono": "+51 946 614 367" },
-      "constanciaEvidencia": "constancias_laborales/01_Constancia_Caja_Arequipa.png",
+      "stack": [
+        ".NET",
+        "C#",
+        "Angular",
+        "SQL Server",
+        "Oracle",
+        "Docker",
+        "CI/CD"
+      ],
+      "referencia": {
+        "nombre": "Alex Sifuentes",
+        "cargo": "Ing.",
+        "telefono": "+51 946 614 367"
+      },
+      "constanciaEvidencia": "constancias_laborales/01_Constancia_Caja_Arequipa_Englobe_Company.jpg",
       "bullets": [
         {
-          "tags": ["liderazgo", "backend", "frontend"],
+          "tags": [
+            "liderazgo",
+            "backend",
+            "frontend"
+          ],
           "verificar": false,
           "es": "Lideré el diseño y desarrollo de extremo a extremo del Sistema de Ingresos, Recursos Humanos y Selección de Personal sobre la plataforma corporativa Caja 360, definiendo la arquitectura de la solución (.NET en el backend y Angular en el frontend) y los estándares técnicos del equipo.",
           "en": "Led the end-to-end design and development of the Income, Human Resources, and Personnel Selection System on the corporate Caja 360 platform, defining the solution architecture (.NET on the backend and Angular on the frontend) and the team's technical standards."
         },
         {
-          "tags": ["bd", "backend"],
+          "tags": [
+            "bd",
+            "backend"
+          ],
           "verificar": false,
           "es": "Modelé y optimicé la capa de persistencia sobre SQL Server y Oracle, garantizando la integridad transaccional y el rendimiento de procesos críticos de RR. HH. y nómina en una entidad financiera regulada.",
           "en": "Modeled and optimized the persistence layer on SQL Server and Oracle, ensuring transactional integrity and the performance of critical HR and payroll processes within a regulated financial institution."
         },
         {
-          "tags": ["devops"],
+          "tags": [
+            "devops"
+          ],
           "verificar": false,
           "es": "Configuré la infraestructura de servidores y entornos, y automaticé el despliegue de la aplicación, reduciendo los tiempos de publicación y minimizando los errores de configuración manual.",
           "en": "Set up server infrastructure and environments and automated application deployment, reducing release times and minimizing manual configuration errors."
         },
         {
-          "tags": ["frontend"],
+          "tags": [
+            "frontend"
+          ],
           "verificar": true,
           "es": "Desarrollé la interfaz en Angular con componentes reutilizables, formularios reactivos (Reactive Forms) y consumo de APIs REST, priorizando usabilidad y consistencia visual.",
           "en": "Developed the Angular interface with reusable components, reactive forms (Reactive Forms), and REST API consumption, prioritizing usability and visual consistency."
         },
         {
-          "tags": ["backend"],
+          "tags": [
+            "backend"
+          ],
           "verificar": true,
           "es": "Implementé servicios y endpoints REST en .NET aplicando buenas prácticas de arquitectura y validación de datos.",
           "en": "Implemented REST services and endpoints in .NET applying architecture best practices and data validation."
         }
-      ]
+      ],
+      "subtitulo": {
+        "es": "Englobe Company S.A.C. (servicio tercerizado)",
+        "en": "Englobe Company S.A.C. (outsourced service)"
+      }
     },
     {
       "id": "educa-peru",
       "empresa": "Educa Perú",
-      "ubicacion": { "es": "Huaraz, Perú", "en": "Huaraz, Peru" },
-      "cargo": { "es": "Desarrollador Full Stack", "en": "Full Stack Developer" },
-      "fechas": { "es": "Abril 2024 – Noviembre 2025", "en": "April 2024 – November 2025" },
-      "sector": { "es": "E-commerce educativo", "en": "Educational e-commerce" },
-      "stack": ["Laravel", "PHP", "React", "TypeScript", "MySQL", "Stripe/PayU"],
-      "referencia": { "nombre": "Juan Laveriano", "cargo": "Ing.", "telefono": "+51 908 750 706" },
+      "ubicacion": {
+        "es": "Huaraz, Perú",
+        "en": "Huaraz, Peru"
+      },
+      "cargo": {
+        "es": "Desarrollador Full Stack",
+        "en": "Full Stack Developer"
+      },
+      "fechas": {
+        "es": "Abril 2024 – Noviembre 2024",
+        "en": "April 2024 – November 2024"
+      },
+      "sector": {
+        "es": "E-commerce educativo",
+        "en": "Educational e-commerce"
+      },
+      "stack": [
+        "Laravel",
+        "PHP",
+        "React",
+        "TypeScript",
+        "MySQL",
+        "Stripe/PayU"
+      ],
+      "referencia": {
+        "nombre": "Juan Laveriano",
+        "cargo": "Ing.",
+        "telefono": "+51 908 750 706"
+      },
       "constanciaEvidencia": "",
       "bullets": [
         {
-          "tags": ["frontend", "backend", "liderazgo"],
+          "tags": [
+            "frontend",
+            "backend",
+            "liderazgo"
+          ],
           "verificar": false,
           "es": "Lideré el desarrollo de una plataforma de e-commerce educativo con Laravel y React/TypeScript, integrando matrículas, pagos en línea y emisión automática de certificados en un único flujo de extremo a extremo.",
           "en": "Led the development of an educational e-commerce platform with Laravel and React/TypeScript, integrating enrollments, online payments, and automatic certificate issuance into a single end-to-end flow."
         },
         {
-          "tags": ["backend", "data"],
+          "tags": [
+            "backend",
+            "data"
+          ],
           "verificar": false,
           "es": "Optimicé la gestión académica y la experiencia de usuario, incrementando los ingresos entre un 20% y 23% durante los primeros 3 meses y fortaleciendo la visibilidad institucional.",
           "en": "Optimized academic management and user experience, increasing revenue by 20% to 23% during the first 3 months and strengthening institutional visibility."
         },
         {
-          "tags": ["frontend"],
+          "tags": [
+            "frontend"
+          ],
           "verificar": true,
           "es": "Construí la interfaz con React + TypeScript (componentes reutilizables y vistas de catálogo/checkout) enfocada en conversión y experiencia de usuario.",
           "en": "Built the interface with React + TypeScript (reusable components and catalog/checkout views) focused on conversion and user experience."
         },
         {
-          "tags": ["backend"],
+          "tags": [
+            "backend"
+          ],
           "verificar": true,
           "es": "Integré pasarela de pagos y generación automática de certificados en el flujo de compra.",
           "en": "Integrated the payment gateway and automatic certificate generation into the purchase flow."
@@ -174,41 +321,70 @@
     {
       "id": "ogtise-unasam",
       "empresa": "OGTISE – UNASAM",
-      "ubicacion": { "es": "Huaraz, Perú", "en": "Huaraz, Peru" },
+      "ubicacion": {
+        "es": "Huaraz, Perú",
+        "en": "Huaraz, Peru"
+      },
       "cargo": {
         "es": "Desarrollador Full Stack (Spring Boot / Angular)",
         "en": "Full Stack Developer (Spring Boot / Angular)"
       },
-      "fechas": { "es": "Abril 2025 – Julio 2025", "en": "April 2025 – July 2025" },
+      "fechas": {
+        "es": "Abril 2025 – Julio 2025",
+        "en": "April 2025 – July 2025"
+      },
       "subtitulo": {
         "es": "Oficina General de Tecnologías de Información, Sistemas y Estadística",
         "en": "Office of Information Technology, Systems, and Statistics"
       },
-      "sector": { "es": "Sector público", "en": "Public sector" },
-      "stack": ["Java", "Spring Boot", "Spring Data", "Angular"],
-      "referencia": { "nombre": "", "cargo": "", "telefono": "" },
+      "sector": {
+        "es": "Sector público",
+        "en": "Public sector"
+      },
+      "stack": [
+        "Java",
+        "Spring Boot",
+        "Spring Data",
+        "Angular"
+      ],
+      "referencia": {
+        "nombre": "Francisco Carranza Vega",
+        "cargo": "Ing. · Director OGTISE – UNASAM",
+        "telefono": "",
+        "email": "fcarranzav@unasam.edu.pe"
+      },
       "constanciaEvidencia": "",
       "bullets": [
         {
-          "tags": ["backend", "frontend"],
+          "tags": [
+            "backend",
+            "frontend"
+          ],
           "verificar": false,
           "es": "Diseñé y desarrollé el Sistema de Gestión de Resoluciones de la UNASAM con Spring Boot y Angular, optimizando el registro, control y consulta de documentos y reduciendo los tiempos de búsqueda en más del 40%.",
           "en": "Designed and developed UNASAM's Resolution Management System with Spring Boot and Angular, optimizing document registration, control, and lookup and reducing search times by over 40%."
         },
         {
-          "tags": ["backend"],
+          "tags": [
+            "backend"
+          ],
           "verificar": false,
           "es": "Implementé el Sistema de Control de Visitas con registro, validación y reportes de accesos, reforzando la seguridad institucional y la trazabilidad de ingresos.",
           "en": "Implemented the Visitor Control System with access registration, validation, and reporting, strengthening institutional security and entry traceability."
         },
         {
-          "tags": ["frontend"],
+          "tags": [
+            "frontend"
+          ],
           "verificar": true,
           "es": "Desarrollé las vistas en Angular con formularios, tablas y filtros de búsqueda para la gestión documental.",
           "en": "Developed the Angular views with forms, tables, and search filters for document management."
         },
         {
-          "tags": ["backend", "bd"],
+          "tags": [
+            "backend",
+            "bd"
+          ],
           "verificar": true,
           "es": "Modelé entidades y consultas con Spring Data para el módulo de resoluciones.",
           "en": "Modeled entities and queries with Spring Data for the resolutions module."
@@ -218,22 +394,48 @@
     {
       "id": "eddecap",
       "empresa": "Eddecap",
-      "ubicacion": { "es": "Huaraz, Perú", "en": "Huaraz, Peru" },
-      "cargo": { "es": "Desarrollador Web", "en": "Web Developer" },
-      "fechas": { "es": "Julio 2022 – Noviembre 2023", "en": "July 2022 – November 2023" },
-      "sector": { "es": "Sitio web corporativo", "en": "Corporate website" },
-      "stack": ["HTML", "CSS", "JavaScript", "WordPress", "SEO"],
-      "referencia": { "nombre": "Gerardo Rodriguez", "cargo": "Ing.", "telefono": "+51 943 104 662" },
+      "ubicacion": {
+        "es": "Huaraz, Perú",
+        "en": "Huaraz, Peru"
+      },
+      "cargo": {
+        "es": "Desarrollador Web",
+        "en": "Web Developer"
+      },
+      "fechas": {
+        "es": "Julio 2022 – Noviembre 2023",
+        "en": "July 2022 – November 2023"
+      },
+      "sector": {
+        "es": "Sitio web corporativo",
+        "en": "Corporate website"
+      },
+      "stack": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "WordPress",
+        "SEO"
+      ],
+      "referencia": {
+        "nombre": "Gerardo Rodriguez",
+        "cargo": "Ing.",
+        "telefono": "+51 943 104 662"
+      },
       "constanciaEvidencia": "",
       "bullets": [
         {
-          "tags": ["frontend"],
+          "tags": [
+            "frontend"
+          ],
           "verificar": false,
           "es": "Diseñé, desarrollé y mantuve el sitio web corporativo aplicando buenas prácticas de desarrollo, estrategias de SEO y optimización de rendimiento, incrementando la visibilidad orgánica y fortaleciendo la presencia digital de la marca.",
           "en": "Designed, developed, and maintained the corporate website applying development best practices, SEO strategies, and performance optimization, increasing organic visibility and strengthening the brand's digital presence."
         },
         {
-          "tags": ["frontend"],
+          "tags": [
+            "frontend"
+          ],
           "verificar": true,
           "es": "Optimicé métricas de carga y accesibilidad del sitio (buenas prácticas web / SEO técnico).",
           "en": "Optimized the site's load metrics and accessibility (web best practices / technical SEO)."
@@ -241,471 +443,789 @@
       ]
     }
   ],
-
   "educacion": [
     {
       "institucion": "Universidad Nacional Santiago Antúnez de Mayolo",
-      "ubicacion": { "es": "Huaraz, Perú", "en": "Huaraz, Peru" },
+      "ubicacion": {
+        "es": "Huaraz, Perú",
+        "en": "Huaraz, Peru"
+      },
       "detalle": {
         "es": "Ingeniería de Sistemas e Informática — Titulado",
         "en": "Systems and Computer Engineering — Professional Degree (Titulado)"
       },
-      "fechas": { "es": "junio 2020 – abril 2026", "en": "June 2020 – April 2026" }
+      "fechas": {
+        "es": "junio 2020 – abril 2026",
+        "en": "June 2020 – April 2026"
+      }
     },
     {
       "institucion": "Universidad Nacional Santiago Antúnez de Mayolo",
-      "ubicacion": { "es": "Huaraz, Perú", "en": "Huaraz, Peru" },
+      "ubicacion": {
+        "es": "Huaraz, Perú",
+        "en": "Huaraz, Peru"
+      },
       "detalle": {
         "es": "Ingeniería de Sistemas e Informática — Bachiller",
         "en": "Systems and Computer Engineering — Bachelor's Degree (Bachiller)"
       },
-      "fechas": { "es": "junio 2020 – octubre 2025", "en": "June 2020 – October 2025" }
+      "fechas": {
+        "es": "junio 2020 – octubre 2025",
+        "en": "June 2020 – October 2025"
+      }
     },
     {
       "institucion": "Universidad Nacional Santiago Antúnez de Mayolo",
-      "ubicacion": { "es": "Huaraz, Perú", "en": "Huaraz, Peru" },
+      "ubicacion": {
+        "es": "Huaraz, Perú",
+        "en": "Huaraz, Peru"
+      },
       "detalle": {
         "es": "Ingeniería de Sistemas e Informática — Egresado",
         "en": "Systems and Computer Engineering — Graduate (Egresado)"
       },
-      "fechas": { "es": "junio 2020 – junio 2025", "en": "June 2020 – June 2025" }
+      "fechas": {
+        "es": "junio 2020 – junio 2025",
+        "en": "June 2020 – June 2025"
+      }
     },
     {
       "institucion": "Centro de Idiomas – UNASAM",
-      "ubicacion": { "es": "Huaraz, Perú", "en": "Huaraz, Peru" },
+      "ubicacion": {
+        "es": "Huaraz, Perú",
+        "en": "Huaraz, Peru"
+      },
       "detalle": {
         "es": "Curso de Inglés Básico (A1)",
         "en": "Basic English Course (A1)"
       },
-      "fechas": { "es": "junio 2023 – junio 2024", "en": "June 2023 – June 2024" }
+      "fechas": {
+        "es": "junio 2023 – junio 2024",
+        "en": "June 2023 – June 2024"
+      }
     }
   ],
-
   "certificados": [
     {
-      "titulo": { "es": "Título Profesional de Ingeniero de Sistemas e Informática", "en": "Professional Degree in Systems and Computer Engineering" },
+      "titulo": {
+        "es": "Título Profesional de Ingeniero de Sistemas e Informática",
+        "en": "Professional Degree in Systems and Computer Engineering"
+      },
       "emisor": "Universidad Nacional Santiago Antúnez de Mayolo (UNASAM)",
       "fecha": "2026-04",
-      "fechaTexto": { "es": "Abr. 2026", "en": "Apr. 2026" },
+      "fechaTexto": {
+        "es": "Abr. 2026",
+        "en": "Apr. 2026"
+      },
       "categoria": "academico",
       "destacado": true,
       "evidencia": ""
     },
     {
-      "titulo": { "es": "Grado de Bachiller en Ingeniería de Sistemas e Informática", "en": "Bachelor's Degree in Systems and Computer Engineering" },
+      "titulo": {
+        "es": "Grado de Bachiller en Ingeniería de Sistemas e Informática",
+        "en": "Bachelor's Degree in Systems and Computer Engineering"
+      },
       "emisor": "Universidad Nacional Santiago Antúnez de Mayolo (UNASAM)",
       "fecha": "2025-10",
-      "fechaTexto": { "es": "Oct. 2025", "en": "Oct. 2025" },
+      "fechaTexto": {
+        "es": "Oct. 2025",
+        "en": "Oct. 2025"
+      },
       "categoria": "academico",
       "destacado": true,
       "evidencia": ""
     },
     {
-      "titulo": { "es": "AI Fluency: Framework & Foundations (10/10)", "en": "AI Fluency: Framework & Foundations (10/10)" },
+      "titulo": {
+        "es": "AI Fluency: Framework & Foundations (10/10)",
+        "en": "AI Fluency: Framework & Foundations (10/10)"
+      },
       "emisor": "Anthropic",
       "fecha": "2026-08",
-      "fechaTexto": { "es": "Ago. 2026", "en": "Aug. 2026" },
+      "fechaTexto": {
+        "es": "Ago. 2026",
+        "en": "Aug. 2026"
+      },
       "categoria": "ia",
       "destacado": true,
       "evidencia": ""
     },
     {
-      "titulo": { "es": "AI Capabilities and Limitations", "en": "AI Capabilities and Limitations" },
+      "titulo": {
+        "es": "AI Capabilities and Limitations",
+        "en": "AI Capabilities and Limitations"
+      },
       "emisor": "Anthropic",
       "fecha": "2026-08",
-      "fechaTexto": { "es": "Ago. 2026", "en": "Aug. 2026" },
+      "fechaTexto": {
+        "es": "Ago. 2026",
+        "en": "Aug. 2026"
+      },
       "categoria": "ia",
       "destacado": false,
       "evidencia": ""
     },
     {
-      "titulo": { "es": "AI Fluency for Builders", "en": "AI Fluency for Builders" },
+      "titulo": {
+        "es": "AI Fluency for Builders",
+        "en": "AI Fluency for Builders"
+      },
       "emisor": "Anthropic",
       "fecha": "2026-08",
-      "fechaTexto": { "es": "Ago. 2026", "en": "Aug. 2026" },
+      "fechaTexto": {
+        "es": "Ago. 2026",
+        "en": "Aug. 2026"
+      },
       "categoria": "ia",
       "destacado": true,
       "evidencia": ""
     },
     {
-      "titulo": { "es": "Building with the Claude API", "en": "Building with the Claude API" },
+      "titulo": {
+        "es": "Building with the Claude API",
+        "en": "Building with the Claude API"
+      },
       "emisor": "Anthropic",
       "fecha": "2026-08",
-      "fechaTexto": { "es": "Ago. 2026", "en": "Aug. 2026" },
+      "fechaTexto": {
+        "es": "Ago. 2026",
+        "en": "Aug. 2026"
+      },
       "categoria": "ia",
       "destacado": true,
       "evidencia": ""
     },
     {
-      "titulo": { "es": "Claude with Amazon Bedrock", "en": "Claude with Amazon Bedrock" },
+      "titulo": {
+        "es": "Claude with Amazon Bedrock",
+        "en": "Claude with Amazon Bedrock"
+      },
       "emisor": "Anthropic",
       "fecha": "2026-08",
-      "fechaTexto": { "es": "Ago. 2026", "en": "Aug. 2026" },
+      "fechaTexto": {
+        "es": "Ago. 2026",
+        "en": "Aug. 2026"
+      },
       "categoria": "ia",
       "destacado": true,
       "evidencia": ""
     },
     {
-      "titulo": { "es": "Claude on Google Cloud", "en": "Claude on Google Cloud" },
+      "titulo": {
+        "es": "Claude on Google Cloud",
+        "en": "Claude on Google Cloud"
+      },
       "emisor": "Anthropic",
       "fecha": "2026-08",
-      "fechaTexto": { "es": "Ago. 2026", "en": "Aug. 2026" },
+      "fechaTexto": {
+        "es": "Ago. 2026",
+        "en": "Aug. 2026"
+      },
       "categoria": "ia",
       "destacado": true,
       "evidencia": ""
     },
     {
-      "titulo": { "es": "Claude Code 101", "en": "Claude Code 101" },
+      "titulo": {
+        "es": "Claude Code 101",
+        "en": "Claude Code 101"
+      },
       "emisor": "Anthropic",
       "fecha": "2026-08",
-      "fechaTexto": { "es": "Ago. 2026", "en": "Aug. 2026" },
+      "fechaTexto": {
+        "es": "Ago. 2026",
+        "en": "Aug. 2026"
+      },
       "categoria": "ia",
       "destacado": true,
       "evidencia": ""
     },
     {
-      "titulo": { "es": "Claude Code in Action", "en": "Claude Code in Action" },
+      "titulo": {
+        "es": "Claude Code in Action",
+        "en": "Claude Code in Action"
+      },
       "emisor": "Anthropic",
       "fecha": "2026-08",
-      "fechaTexto": { "es": "Ago. 2026", "en": "Aug. 2026" },
+      "fechaTexto": {
+        "es": "Ago. 2026",
+        "en": "Aug. 2026"
+      },
       "categoria": "ia",
       "destacado": false,
       "evidencia": ""
     },
     {
-      "titulo": { "es": "Claude 101", "en": "Claude 101" },
+      "titulo": {
+        "es": "Claude 101",
+        "en": "Claude 101"
+      },
       "emisor": "Anthropic",
       "fecha": "2026-08",
-      "fechaTexto": { "es": "Ago. 2026", "en": "Aug. 2026" },
+      "fechaTexto": {
+        "es": "Ago. 2026",
+        "en": "Aug. 2026"
+      },
       "categoria": "ia",
       "destacado": false,
       "evidencia": ""
     },
     {
-      "titulo": { "es": "Claude Platform 101", "en": "Claude Platform 101" },
+      "titulo": {
+        "es": "Claude Platform 101",
+        "en": "Claude Platform 101"
+      },
       "emisor": "Anthropic",
       "fecha": "2026-08",
-      "fechaTexto": { "es": "Ago. 2026", "en": "Aug. 2026" },
+      "fechaTexto": {
+        "es": "Ago. 2026",
+        "en": "Aug. 2026"
+      },
       "categoria": "ia",
       "destacado": false,
       "evidencia": ""
     },
     {
-      "titulo": { "es": "Introduction to Model Context Protocol (MCP)", "en": "Introduction to Model Context Protocol (MCP)" },
+      "titulo": {
+        "es": "Introduction to Model Context Protocol (MCP)",
+        "en": "Introduction to Model Context Protocol (MCP)"
+      },
       "emisor": "Anthropic",
       "fecha": "2026-08",
-      "fechaTexto": { "es": "Ago. 2026", "en": "Aug. 2026" },
+      "fechaTexto": {
+        "es": "Ago. 2026",
+        "en": "Aug. 2026"
+      },
       "categoria": "ia",
       "destacado": true,
       "evidencia": ""
     },
     {
-      "titulo": { "es": "Model Context Protocol: Advanced Topics", "en": "Model Context Protocol: Advanced Topics" },
+      "titulo": {
+        "es": "Model Context Protocol: Advanced Topics",
+        "en": "Model Context Protocol: Advanced Topics"
+      },
       "emisor": "Anthropic",
       "fecha": "2026-08",
-      "fechaTexto": { "es": "Ago. 2026", "en": "Aug. 2026" },
+      "fechaTexto": {
+        "es": "Ago. 2026",
+        "en": "Aug. 2026"
+      },
       "categoria": "ia",
       "destacado": true,
       "evidencia": ""
     },
     {
-      "titulo": { "es": "Introduction to subagents", "en": "Introduction to subagents" },
+      "titulo": {
+        "es": "Introduction to subagents",
+        "en": "Introduction to subagents"
+      },
       "emisor": "Anthropic",
       "fecha": "2026-08",
-      "fechaTexto": { "es": "Ago. 2026", "en": "Aug. 2026" },
+      "fechaTexto": {
+        "es": "Ago. 2026",
+        "en": "Aug. 2026"
+      },
       "categoria": "ia",
       "destacado": false,
       "evidencia": ""
     },
     {
-      "titulo": { "es": "Introduction to agent skills", "en": "Introduction to agent skills" },
+      "titulo": {
+        "es": "Introduction to agent skills",
+        "en": "Introduction to agent skills"
+      },
       "emisor": "Anthropic",
       "fecha": "2026-08",
-      "fechaTexto": { "es": "Ago. 2026", "en": "Aug. 2026" },
+      "fechaTexto": {
+        "es": "Ago. 2026",
+        "en": "Aug. 2026"
+      },
       "categoria": "ia",
       "destacado": false,
       "evidencia": ""
     },
     {
-      "titulo": { "es": "Introduction to Claude Cowork", "en": "Introduction to Claude Cowork" },
+      "titulo": {
+        "es": "Introduction to Claude Cowork",
+        "en": "Introduction to Claude Cowork"
+      },
       "emisor": "Anthropic",
       "fecha": "2026-08",
-      "fechaTexto": { "es": "Ago. 2026", "en": "Aug. 2026" },
+      "fechaTexto": {
+        "es": "Ago. 2026",
+        "en": "Aug. 2026"
+      },
       "categoria": "ia",
       "destacado": false,
       "evidencia": ""
     },
     {
-      "titulo": { "es": "AI Fluency for students", "en": "AI Fluency for students" },
+      "titulo": {
+        "es": "AI Fluency for students",
+        "en": "AI Fluency for students"
+      },
       "emisor": "Anthropic",
       "fecha": "2026-08",
-      "fechaTexto": { "es": "Ago. 2026", "en": "Aug. 2026" },
+      "fechaTexto": {
+        "es": "Ago. 2026",
+        "en": "Aug. 2026"
+      },
       "categoria": "ia",
       "destacado": false,
       "evidencia": ""
     },
     {
-      "titulo": { "es": "AI Fluency for educators", "en": "AI Fluency for educators" },
+      "titulo": {
+        "es": "AI Fluency for educators",
+        "en": "AI Fluency for educators"
+      },
       "emisor": "Anthropic",
       "fecha": "2026-08",
-      "fechaTexto": { "es": "Ago. 2026", "en": "Aug. 2026" },
+      "fechaTexto": {
+        "es": "Ago. 2026",
+        "en": "Aug. 2026"
+      },
       "categoria": "ia",
       "destacado": false,
       "evidencia": ""
     },
     {
-      "titulo": { "es": "AI Fluency for nonprofits", "en": "AI Fluency for nonprofits" },
+      "titulo": {
+        "es": "AI Fluency for nonprofits",
+        "en": "AI Fluency for nonprofits"
+      },
       "emisor": "Anthropic",
       "fecha": "2026-08",
-      "fechaTexto": { "es": "Ago. 2026", "en": "Aug. 2026" },
+      "fechaTexto": {
+        "es": "Ago. 2026",
+        "en": "Aug. 2026"
+      },
       "categoria": "ia",
       "destacado": false,
       "evidencia": ""
     },
     {
-      "titulo": { "es": "AI Fluency for Small Businesses", "en": "AI Fluency for Small Businesses" },
+      "titulo": {
+        "es": "AI Fluency for Small Businesses",
+        "en": "AI Fluency for Small Businesses"
+      },
       "emisor": "Anthropic",
       "fecha": "2026-08",
-      "fechaTexto": { "es": "Ago. 2026", "en": "Aug. 2026" },
+      "fechaTexto": {
+        "es": "Ago. 2026",
+        "en": "Aug. 2026"
+      },
       "categoria": "ia",
       "destacado": false,
       "evidencia": ""
     },
     {
-      "titulo": { "es": "Teaching AI Fluency", "en": "Teaching AI Fluency" },
+      "titulo": {
+        "es": "AI Fluency for Creative Work",
+        "en": "AI Fluency for Creative Work"
+      },
       "emisor": "Anthropic",
       "fecha": "2026-08",
-      "fechaTexto": { "es": "Ago. 2026", "en": "Aug. 2026" },
+      "fechaTexto": {
+        "es": "Ago. 2026",
+        "en": "Aug. 2026"
+      },
       "categoria": "ia",
       "destacado": false,
       "evidencia": ""
     },
     {
-      "titulo": { "es": "AWS Cloud Fundamentos", "en": "AWS Cloud Fundamentals" },
+      "titulo": {
+        "es": "Teaching AI Fluency",
+        "en": "Teaching AI Fluency"
+      },
+      "emisor": "Anthropic",
+      "fecha": "2026-08",
+      "fechaTexto": {
+        "es": "Ago. 2026",
+        "en": "Aug. 2026"
+      },
+      "categoria": "ia",
+      "destacado": false,
+      "evidencia": ""
+    },
+    {
+      "titulo": {
+        "es": "AWS Cloud Fundamentos",
+        "en": "AWS Cloud Fundamentals"
+      },
       "emisor": "Amazon Web Services (Training & Certification)",
       "fecha": "2024-04",
-      "fechaTexto": { "es": "Abr. 2024", "en": "Apr. 2024" },
+      "fechaTexto": {
+        "es": "Abr. 2024",
+        "en": "Apr. 2024"
+      },
       "categoria": "cloud",
       "destacado": true,
       "evidencia": "certificados/01_AWS_Cloud_Fundamentos.png"
     },
     {
-      "titulo": { "es": "Programación Java Spring Boot", "en": "Java Spring Boot Programming" },
+      "titulo": {
+        "es": "Programación Java Spring Boot",
+        "en": "Java Spring Boot Programming"
+      },
       "emisor": "Platzi",
       "fecha": "2024-08",
-      "fechaTexto": { "es": "Ago. 2024", "en": "Aug. 2024" },
+      "fechaTexto": {
+        "es": "Ago. 2024",
+        "en": "Aug. 2024"
+      },
       "categoria": "backend",
       "destacado": true,
       "evidencia": "certificados/02_Java_Spring_Boot_Platzi.png"
     },
     {
-      "titulo": { "es": "Angular Avanzado", "en": "Advanced Angular" },
+      "titulo": {
+        "es": "Angular Avanzado",
+        "en": "Advanced Angular"
+      },
       "emisor": "Platzi",
       "fecha": "2024-08",
-      "fechaTexto": { "es": "Ago. 2024", "en": "Aug. 2024" },
+      "fechaTexto": {
+        "es": "Ago. 2024",
+        "en": "Aug. 2024"
+      },
       "categoria": "frontend",
       "destacado": true,
       "evidencia": ""
     },
     {
-      "titulo": { "es": "Programación Java", "en": "Java Programming" },
+      "titulo": {
+        "es": "Programación Java",
+        "en": "Java Programming"
+      },
       "emisor": "Fundación Telefónica del Perú (Conecta Empleo)",
       "fecha": "2024-08",
-      "fechaTexto": { "es": "Ago. 2024", "en": "Aug. 2024" },
+      "fechaTexto": {
+        "es": "Ago. 2024",
+        "en": "Aug. 2024"
+      },
       "categoria": "backend",
       "destacado": false,
       "evidencia": ""
     },
     {
-      "titulo": { "es": "English for IT", "en": "English for IT" },
+      "titulo": {
+        "es": "English for IT",
+        "en": "English for IT"
+      },
       "emisor": "Cisco Networking Academy",
       "fecha": "2024-08",
-      "fechaTexto": { "es": "Ago. 2024", "en": "Aug. 2024" },
+      "fechaTexto": {
+        "es": "Ago. 2024",
+        "en": "Aug. 2024"
+      },
       "categoria": "idiomas",
       "destacado": false,
       "evidencia": ""
     },
     {
-      "titulo": { "es": "HTML Essentials", "en": "HTML Essentials" },
+      "titulo": {
+        "es": "HTML Essentials",
+        "en": "HTML Essentials"
+      },
       "emisor": "Cisco Networking Academy",
       "fecha": "2024-08",
-      "fechaTexto": { "es": "Ago. 2024", "en": "Aug. 2024" },
+      "fechaTexto": {
+        "es": "Ago. 2024",
+        "en": "Aug. 2024"
+      },
       "categoria": "frontend",
       "destacado": false,
       "evidencia": ""
     },
     {
-      "titulo": { "es": "CSS Essentials", "en": "CSS Essentials" },
+      "titulo": {
+        "es": "CSS Essentials",
+        "en": "CSS Essentials"
+      },
       "emisor": "Cisco Networking Academy",
       "fecha": "2024-08",
-      "fechaTexto": { "es": "Ago. 2024", "en": "Aug. 2024" },
+      "fechaTexto": {
+        "es": "Ago. 2024",
+        "en": "Aug. 2024"
+      },
       "categoria": "frontend",
       "destacado": false,
       "evidencia": ""
     },
     {
-      "titulo": { "es": "JavaScript Essentials", "en": "JavaScript Essentials" },
+      "titulo": {
+        "es": "JavaScript Essentials",
+        "en": "JavaScript Essentials"
+      },
       "emisor": "Cisco Networking Academy",
       "fecha": "2024-08",
-      "fechaTexto": { "es": "Ago. 2024", "en": "Aug. 2024" },
+      "fechaTexto": {
+        "es": "Ago. 2024",
+        "en": "Aug. 2024"
+      },
       "categoria": "frontend",
       "destacado": false,
       "evidencia": ""
     },
     {
-      "titulo": { "es": "JavaScript Advanced", "en": "JavaScript Advanced" },
+      "titulo": {
+        "es": "JavaScript Advanced",
+        "en": "JavaScript Advanced"
+      },
       "emisor": "Cisco Networking Academy",
       "fecha": "2024-08",
-      "fechaTexto": { "es": "Ago. 2024", "en": "Aug. 2024" },
+      "fechaTexto": {
+        "es": "Ago. 2024",
+        "en": "Aug. 2024"
+      },
       "categoria": "frontend",
       "destacado": false,
       "evidencia": ""
     },
     {
-      "titulo": { "es": "Python Essentials", "en": "Python Essentials" },
+      "titulo": {
+        "es": "Python Essentials",
+        "en": "Python Essentials"
+      },
       "emisor": "Cisco Networking Academy",
       "fecha": "2024-08",
-      "fechaTexto": { "es": "Ago. 2024", "en": "Aug. 2024" },
+      "fechaTexto": {
+        "es": "Ago. 2024",
+        "en": "Aug. 2024"
+      },
       "categoria": "data",
       "destacado": false,
       "evidencia": ""
     },
     {
-      "titulo": { "es": "Python Advanced", "en": "Python Advanced" },
+      "titulo": {
+        "es": "Python Advanced",
+        "en": "Python Advanced"
+      },
       "emisor": "Cisco Networking Academy",
       "fecha": "2024-08",
-      "fechaTexto": { "es": "Ago. 2024", "en": "Aug. 2024" },
+      "fechaTexto": {
+        "es": "Ago. 2024",
+        "en": "Aug. 2024"
+      },
       "categoria": "data",
       "destacado": false,
       "evidencia": ""
     },
     {
-      "titulo": { "es": "Diseño Web (HTML y CSS)", "en": "Web Design (HTML & CSS)" },
+      "titulo": {
+        "es": "Diseño Web (HTML y CSS)",
+        "en": "Web Design (HTML & CSS)"
+      },
       "emisor": "Fundación Telefónica del Perú (Conecta Empleo)",
       "fecha": "2024-08",
-      "fechaTexto": { "es": "Ago. 2024", "en": "Aug. 2024" },
+      "fechaTexto": {
+        "es": "Ago. 2024",
+        "en": "Aug. 2024"
+      },
       "categoria": "frontend",
       "destacado": false,
       "evidencia": ""
     },
     {
-      "titulo": { "es": "Aprende WordPress de forma sencilla", "en": "Learn WordPress the Easy Way" },
+      "titulo": {
+        "es": "Aprende WordPress de forma sencilla",
+        "en": "Learn WordPress the Easy Way"
+      },
       "emisor": "Fundación Telefónica del Perú (Conecta Empleo)",
       "fecha": "2024-08",
-      "fechaTexto": { "es": "Ago. 2024", "en": "Aug. 2024" },
+      "fechaTexto": {
+        "es": "Ago. 2024",
+        "en": "Aug. 2024"
+      },
       "categoria": "cms",
       "destacado": false,
       "evidencia": ""
     },
     {
-      "titulo": { "es": "Inspiring Study Conference", "en": "Inspiring Study Conference" },
+      "titulo": {
+        "es": "Inspiring Study Conference",
+        "en": "Inspiring Study Conference"
+      },
       "emisor": "Google",
       "fecha": "2024-08",
-      "fechaTexto": { "es": "Ago. 2024", "en": "Aug. 2024" },
+      "fechaTexto": {
+        "es": "Ago. 2024",
+        "en": "Aug. 2024"
+      },
       "categoria": "evento",
       "destacado": false,
       "evidencia": ""
     },
     {
-      "titulo": { "es": "Lógica Difusa en Python", "en": "Fuzzy Logic in Python" },
+      "titulo": {
+        "es": "Lógica Difusa en Python",
+        "en": "Fuzzy Logic in Python"
+      },
       "emisor": "UNASAM (Congreso Internacional)",
       "fecha": "2024-05",
-      "fechaTexto": { "es": "May. 2024", "en": "May 2024" },
+      "fechaTexto": {
+        "es": "May. 2024",
+        "en": "May 2024"
+      },
       "categoria": "data",
       "destacado": false,
       "evidencia": ""
     },
     {
-      "titulo": { "es": "Machine Learning", "en": "Machine Learning" },
+      "titulo": {
+        "es": "Machine Learning",
+        "en": "Machine Learning"
+      },
       "emisor": "UNASAM (Congreso Internacional)",
       "fecha": "2024-05",
-      "fechaTexto": { "es": "May. 2024", "en": "May 2024" },
+      "fechaTexto": {
+        "es": "May. 2024",
+        "en": "May 2024"
+      },
       "categoria": "data",
       "destacado": false,
       "evidencia": ""
     },
     {
-      "titulo": { "es": "Agricultura de Precisión", "en": "Precision Agriculture" },
+      "titulo": {
+        "es": "Agricultura de Precisión",
+        "en": "Precision Agriculture"
+      },
       "emisor": "UNASAM (Congreso Internacional)",
       "fecha": "2024-05",
-      "fechaTexto": { "es": "May. 2024", "en": "May 2024" },
+      "fechaTexto": {
+        "es": "May. 2024",
+        "en": "May 2024"
+      },
       "categoria": "data",
       "destacado": false,
       "evidencia": ""
     },
     {
-      "titulo": { "es": "Certificado de Egresado", "en": "Graduate Certificate" },
+      "titulo": {
+        "es": "Certificado de Egresado",
+        "en": "Graduate Certificate"
+      },
       "emisor": "UNASAM",
       "fecha": "2025-08",
-      "fechaTexto": { "es": "Ago. 2025", "en": "Aug. 2025" },
+      "fechaTexto": {
+        "es": "Ago. 2025",
+        "en": "Aug. 2025"
+      },
       "categoria": "academico",
       "destacado": false,
       "evidencia": ""
     },
     {
-      "titulo": { "es": "Certificado de Superación, Inglés Básico", "en": "Certificate of Achievement, Basic English" },
+      "titulo": {
+        "es": "Certificado de Superación, Inglés Básico",
+        "en": "Certificate of Achievement, Basic English"
+      },
       "emisor": "UNASAM",
       "fecha": "2025-08",
-      "fechaTexto": { "es": "Ago. 2025", "en": "Aug. 2025" },
+      "fechaTexto": {
+        "es": "Ago. 2025",
+        "en": "Aug. 2025"
+      },
       "categoria": "idiomas",
       "destacado": false,
       "evidencia": ""
     },
     {
-      "titulo": { "es": "Constancia de Prácticas Preprofesionales", "en": "Pre-Professional Internship Certificate" },
+      "titulo": {
+        "es": "Constancia de Prácticas Preprofesionales",
+        "en": "Pre-Professional Internship Certificate"
+      },
       "emisor": "OGTISE",
       "fecha": "2025-08",
-      "fechaTexto": { "es": "Ago. 2025", "en": "Aug. 2025" },
+      "fechaTexto": {
+        "es": "Ago. 2025",
+        "en": "Aug. 2025"
+      },
       "categoria": "practicas",
       "destacado": false,
       "evidencia": ""
     },
     {
-      "titulo": { "es": "Seminario de Investigación, Desarrollo, Innovación y Divulgación", "en": "Research, Development, Innovation, and Outreach Seminar" },
+      "titulo": {
+        "es": "Seminario de Investigación, Desarrollo, Innovación y Divulgación",
+        "en": "Research, Development, Innovation, and Outreach Seminar"
+      },
       "emisor": "UNASAM",
       "fecha": "2022-11",
-      "fechaTexto": { "es": "Nov. 2022", "en": "Nov. 2022" },
+      "fechaTexto": {
+        "es": "Nov. 2022",
+        "en": "Nov. 2022"
+      },
       "categoria": "evento",
       "destacado": false,
       "evidencia": ""
     }
   ],
-
   "constancias": [
+    {
+      "relacionadaCon": "promart-joyit",
+      "empresa": "Promart Homecenter (Joyit)",
+      "tipo": {
+        "es": "Constancia de trabajo",
+        "en": "Work certificate"
+      },
+      "estado": "en curso",
+      "evidencia": ""
+    },
     {
       "relacionadaCon": "caja-arequipa",
       "empresa": "Caja Arequipa",
-      "tipo": { "es": "Constancia de trabajo", "en": "Work certificate" },
+      "tipo": {
+        "es": "Constancia de trabajo",
+        "en": "Work certificate"
+      },
       "estado": "disponible",
-      "evidencia": "constancias_laborales/01_Constancia_Caja_Arequipa.png"
+      "evidencia": "constancias_laborales/01_Constancia_Caja_Arequipa_Englobe_Company.jpg"
     },
     {
       "relacionadaCon": "educa-peru",
       "empresa": "Educa Perú",
-      "tipo": { "es": "Constancia de trabajo", "en": "Work certificate" },
-      "estado": "pendiente",
-      "evidencia": ""
+      "tipo": {
+        "es": "Constancia de trabajo",
+        "en": "Work certificate"
+      },
+      "estado": "disponible",
+      "evidencia": "constancias_laborales/02_Constancia_Educa_Peru.jpg"
     },
     {
       "relacionadaCon": "ogtise-unasam",
       "empresa": "OGTISE – UNASAM",
-      "tipo": { "es": "Constancia de prácticas preprofesionales", "en": "Pre-professional internship certificate" },
-      "estado": "pendiente",
-      "evidencia": ""
+      "tipo": {
+        "es": "Constancia de prácticas preprofesionales",
+        "en": "Pre-professional internship certificate"
+      },
+      "estado": "disponible",
+      "evidencia": "certificados/04_Constancia_de_Practicas_Preprofesionales_OGTISE.jpg"
     },
     {
       "relacionadaCon": "eddecap",
       "empresa": "Eddecap",
-      "tipo": { "es": "Constancia de trabajo", "en": "Work certificate" },
-      "estado": "pendiente",
-      "evidencia": ""
+      "tipo": {
+        "es": "Constancia de trabajo",
+        "en": "Work certificate"
+      },
+      "estado": "disponible",
+      "evidencia": "constancias_laborales/03_Constancia_Eddecap.jpg"
     }
   ],
-
   "habilidades": [
     {
       "id": "backend",
-      "cat": { "es": "Backend:", "en": "Backend:" },
+      "cat": {
+        "es": "Backend:",
+        "en": "Backend:"
+      },
       "bullets": [
         {
           "es": "C# (.NET — Jobs/Queues, Redis, Horizon), Java (Spring Boot — Spring Data, Spring Security, AMQP), Node.js (Express), Python (Flask/Django para microservicios y scripts de automatización).",
@@ -723,7 +1243,10 @@
     },
     {
       "id": "ia_data",
-      "cat": { "es": "Inteligencia Artificial & Data:", "en": "Artificial Intelligence & Data:" },
+      "cat": {
+        "es": "Inteligencia Artificial & Data:",
+        "en": "Artificial Intelligence & Data:"
+      },
       "bullets": [
         {
           "es": "Python data stack: Pandas, NumPy para limpieza y pipelines ETL.",
@@ -741,7 +1264,10 @@
     },
     {
       "id": "frontend",
-      "cat": { "es": "Frontend:", "en": "Frontend:" },
+      "cat": {
+        "es": "Frontend:",
+        "en": "Frontend:"
+      },
       "bullets": [
         {
           "es": "Angular (v11–v22) y TypeScript — desarrollo de SPAs, formularios avanzados, RxJS, pruebas unitarias con Jasmine/Karma.",
@@ -759,7 +1285,10 @@
     },
     {
       "id": "bd",
-      "cat": { "es": "Bases de Datos & Búsqueda:", "en": "Databases & Search:" },
+      "cat": {
+        "es": "Bases de Datos & Búsqueda:",
+        "en": "Databases & Search:"
+      },
       "bullets": [
         {
           "es": "Relacionales: MySQL/MariaDB, PostgreSQL, Oracle, SQL Server; diseño de esquemas, índices y optimización de queries.",
@@ -777,7 +1306,10 @@
     },
     {
       "id": "cloud",
-      "cat": { "es": "Cloud & DevOps:", "en": "Cloud & DevOps:" },
+      "cat": {
+        "es": "Cloud & DevOps:",
+        "en": "Cloud & DevOps:"
+      },
       "bullets": [
         {
           "es": "AWS: S3, EC2, RDS, IAM (despliegues y almacenamiento).",
@@ -795,7 +1327,10 @@
     },
     {
       "id": "contenedores",
-      "cat": { "es": "Contenedores & Orquestación:", "en": "Containers & Orchestration:" },
+      "cat": {
+        "es": "Contenedores & Orquestación:",
+        "en": "Containers & Orchestration:"
+      },
       "bullets": [
         {
           "es": "Docker (imágenes optimizadas), Kubernetes (despliegue y configuración básica), Docker Compose para entornos locales.",
@@ -805,7 +1340,10 @@
     },
     {
       "id": "mensajeria",
-      "cat": { "es": "Mensajería & Tiempo Real:", "en": "Messaging & Real Time:" },
+      "cat": {
+        "es": "Mensajería & Tiempo Real:",
+        "en": "Messaging & Real Time:"
+      },
       "bullets": [
         {
           "es": "RabbitMQ, Redis (pub/sub), WebSockets / Socket.IO / Pusher para notificaciones y paneles en tiempo real.",
@@ -815,7 +1353,10 @@
     },
     {
       "id": "cicd",
-      "cat": { "es": "CI/CD & Automatización:", "en": "CI/CD & Automation:" },
+      "cat": {
+        "es": "CI/CD & Automatización:",
+        "en": "CI/CD & Automation:"
+      },
       "bullets": [
         {
           "es": "GitHub Actions, GitLab CI, Git Flow; pipelines de tests y despliegue automatizado.",
@@ -829,7 +1370,10 @@
     },
     {
       "id": "integraciones",
-      "cat": { "es": "Integraciones & Pagos:", "en": "Integrations & Payments:" },
+      "cat": {
+        "es": "Integraciones & Pagos:",
+        "en": "Integrations & Payments:"
+      },
       "bullets": [
         {
           "es": "Pasarelas de pago (Stripe / PayU), APIs externas (WhatsApp/Twilio, SMTP), almacenamiento S3-compatible y generación de PDFs (iText, Apache PDFBox).",
@@ -839,7 +1383,10 @@
     },
     {
       "id": "versionado",
-      "cat": { "es": "Control de Versiones & Colaboración:", "en": "Version Control & Collaboration:" },
+      "cat": {
+        "es": "Control de Versiones & Colaboración:",
+        "en": "Version Control & Collaboration:"
+      },
       "bullets": [
         {
           "es": "Git (GitHub/GitLab), Pull Requests, code review, gestión de ramas y flujos colaborativos.",
@@ -849,7 +1396,10 @@
     },
     {
       "id": "arquitectura",
-      "cat": { "es": "Arquitectura & Buenas Prácticas:", "en": "Architecture & Best Practices:" },
+      "cat": {
+        "es": "Arquitectura & Buenas Prácticas:",
+        "en": "Architecture & Best Practices:"
+      },
       "bullets": [
         {
           "es": "Clean Architecture, DDD (conceptos aplicados), principios SOLID, diseño orientado a pruebas (TDD/unit testing), revisión de performance y seguridad (CSP, HSTS).",
@@ -858,23 +1408,86 @@
       ]
     }
   ],
-
   "habilidadesPorRol": {
-    "frontend": ["frontend", "arquitectura", "versionado", "cicd"],
-    "backend": ["backend", "bd", "arquitectura", "mensajeria", "cicd"],
-    "devops": ["cloud", "contenedores", "cicd", "backend"],
-    "data": ["ia_data", "bd", "backend"],
-    "fullstack": ["backend", "ia_data", "frontend", "bd", "cloud", "contenedores", "mensajeria", "cicd", "integraciones", "versionado", "arquitectura"]
+    "frontend": [
+      "frontend",
+      "arquitectura",
+      "versionado",
+      "cicd"
+    ],
+    "backend": [
+      "backend",
+      "bd",
+      "arquitectura",
+      "mensajeria",
+      "cicd"
+    ],
+    "devops": [
+      "cloud",
+      "contenedores",
+      "cicd",
+      "backend"
+    ],
+    "data": [
+      "ia_data",
+      "bd",
+      "backend"
+    ],
+    "fullstack": [
+      "backend",
+      "ia_data",
+      "frontend",
+      "bd",
+      "cloud",
+      "contenedores",
+      "mensajeria",
+      "cicd",
+      "integraciones",
+      "versionado",
+      "arquitectura"
+    ]
   },
-
   "keywordsPorStack": {
-    ".NET": ["C#", "ASP.NET Core", "Entity Framework", "SQL Server", "Azure", "microservicios"],
-    "Java": ["Spring Boot", "Spring Data", "Spring Security", "JUnit", "REST"],
-    "React": ["React", "TypeScript", "Next.js", "SSR/SSG", "hooks", "Tailwind"],
-    "Angular": ["Angular", "RxJS", "Reactive Forms", "Jasmine/Karma", "TypeScript"],
-    "DevOps": ["Docker", "Kubernetes", "CI/CD", "GitHub Actions", "GitLab CI", "AWS", "Azure"]
+    ".NET": [
+      "C#",
+      "ASP.NET Core",
+      "Entity Framework",
+      "SQL Server",
+      "Azure",
+      "microservicios"
+    ],
+    "Java": [
+      "Spring Boot",
+      "Spring Data",
+      "Spring Security",
+      "JUnit",
+      "REST"
+    ],
+    "React": [
+      "React",
+      "TypeScript",
+      "Next.js",
+      "SSR/SSG",
+      "hooks",
+      "Tailwind"
+    ],
+    "Angular": [
+      "Angular",
+      "RxJS",
+      "Reactive Forms",
+      "Jasmine/Karma",
+      "TypeScript"
+    ],
+    "DevOps": [
+      "Docker",
+      "Kubernetes",
+      "CI/CD",
+      "GitHub Actions",
+      "GitLab CI",
+      "AWS",
+      "Azure"
+    ]
   },
-
   "skillsAdicionales": [
     {
       "es": "Experiencia en herramientas de automatización y metodologías DevOps (Docker, CI/CD).",
@@ -897,12 +1510,16 @@
       "en": "Interest in teaching and technology outreach."
     }
   ],
-
   "idiomas": [
-    { "es": "Español — Nativo", "en": "Spanish — Native" },
-    { "es": "Inglés — Básico/Intermedio (A1 certificado)", "en": "English — Basic/Intermediate (A1 certified)" }
+    {
+      "es": "Español — Nativo",
+      "en": "Spanish — Native"
+    },
+    {
+      "es": "Inglés — Básico/Intermedio (A1 certificado)",
+      "en": "English — Basic/Intermediate (A1 certified)"
+    }
   ],
-
   "labels": {
     "es": {
       "experiencia": "EXPERIENCIA PROFESIONAL",

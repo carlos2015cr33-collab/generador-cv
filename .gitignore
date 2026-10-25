@@ -2,9 +2,28 @@
 node_modules/
 **/node_modules/
 
-# Repo externo clonado (tiene su propio git).
-# Re-clonar con: git clone https://github.com/MadsLorentzen/ai-job-search.git
-# /ai-job-search/
 
 # Estado transitorio del buscador (se regenera con /buscar)
 # /postular/trabajos.json
+
+
+# ---------------------------------------------------------------------------
+# ai-job-search/
+# ---------------------------------------------------------------------------
+# Es código de terceros (https://github.com/MadsLorentzen/ai-job-search, v1.7.0,
+# MIT) ABSORBIDO dentro de este repo: se le quitó su .git para que sus archivos
+# queden versionados aquí y el proyecto funcione con un solo `git clone`.
+#
+# Para actualizarlo desde el repo original ya NO sirve `cd ai-job-search && git pull`.
+# Hay que clonarlo aparte y copiar los cambios:
+#   git clone https://github.com/MadsLorentzen/ai-job-search.git /tmp/ajs
+#   # comparar y copiar lo que interese sobre ai-job-search/
+#
+# Su propio ai-job-search/.gitignore sigue aplicando (y conviene dejarlo así):
+# ya excluye .env, PDFs, CVs personales, documents/, reports/ y demás salidas
+# locales del buscador. No lo borres.
+# ---------------------------------------------------------------------------
+
+# Salidas locales del buscador que no deben versionarse
+ai-job-search/.claude/settings.local.json
+ai-job-search/*.local.*
