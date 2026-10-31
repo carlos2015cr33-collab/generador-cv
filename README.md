@@ -1,4 +1,4 @@
-# Kit de CV — Luis Alberto Huaney Lino
+# Kit de CV —Ramírez Carrero Carlos 
 
 Paquete reutilizable para que un **agente de IA** genere y adapte rápidamente el CV a un puesto concreto (ej. *Frontend Senior React*), a partir de una base de datos de experiencia y plantillas en Word que se regeneran por código.
 
